@@ -20,7 +20,7 @@ This board requires intermediate practice in surface-mount soldering techniques 
 
 - 16MHz: [ABM3B-16.000MHZ-B2-T](https://www.digikey.com/product-detail/en/abracon-llc/ABM3B-16.000MHZ-B2-T/535-9122-1-ND/675639 "16MHz Crystal Resonator") (Note: 16MHz is technically slightly out of spec for the ATMEGA328P at 3.3V VDD<sub>IO</sub>, but a fair bit of testing has shown that this frequency still works well without hiccups, and it is much easier to set-up the Arduino UNO firmware this way).
 
-- 3.3V LDO: [MIC37100-3.3WS (Note: this LDO is pin-compatible with the 5V UA78M05 regulator used on the normal Arduino UNOs. Using the 5V regulator should theoretically return 5V VDD<sub>IO</sub>, but I have not tested if this breaks anything else. Also, please note that there are some more commonly used 3.3V LDOs that have the same package, but are not pin-compatible. Please be mindful if you deviate)](https://www.digikey.com/product-detail/en/microchip-technology/MIC37100-3.3WS-TR/MIC37100-3.3WS-CT-ND/7897216 "3.3V LDO")
+- 3.3V LDO: [MIC37100-3.3WS](https://www.digikey.com/product-detail/en/microchip-technology/MIC37100-3.3WS-TR/MIC37100-3.3WS-CT-ND/7897216 "3.3V LDO")(Note: this LDO is pin-compatible with the 5V UA78M05 regulator used on the normal Arduino UNOs. Using the 5V regulator should theoretically return 5V VDD<sub>IO</sub>, but I have not tested if this breaks anything else. Also, please note that there are some more commonly used 3.3V LDOs that have the same package, but are not pin-compatible. Please be mindful if you deviate)
 
 - J1, J2, J3: [1 x 15 100mil (254mm) Breakaway Headers (anything will work)](https://www.digikey.com/product-detail/en/sullins-connector-solutions/PREC040SAAN-RC/S1012EC-40-ND/2774814 "40 Length Breakaway Header Row")
 
@@ -44,3 +44,11 @@ This board requires intermediate practice in surface-mount soldering techniques 
 
 - C3, C4, C7: [0603 Capacitor (1μF)](https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10A105KA8NNNC/1276-1102-1-ND/3889188 "1μF Bypass Caps")
 
+
+### Arduino Setup
+
+While you could flash the ATMEGA328P on the board with potentially whatever firmware you want through the on-board SPI pins (provided you have compatable compiled code for the microprocessor), I find that the most versatile use of this device is to flash it with the readily available [Arduino](https://www.arduino.cc/en/main/software "Download Arduino") Bootloader for on-the-fly hacks.
+
+Fortunately, to accomplish this, Sparkfun has [an excellent tutorial](https://learn.sparkfun.com/tutorials/installing-an-arduino-bootloader/all "Flashing Tutorial") on how to install the Arduino bootloader on any Arduino-compatible device (including this business card)! By using either a dedicated programmer or simply another arduino, you can flash the now populated board in a matter of seconds. If you have another arduino, it's as simple as installing the readily available "ArduinoISP" sketch onto the programmer Arduino and hooking it up the respective ISP pins between the boards (the ISP boards are GND, RST, D11, D13, 3V3, and D12 at J3). Provided you follow the sparkfun tutorial and connect the right pins for the SPI communication, you should have no problem getting this board up and running. Please note, if you are using a normal off the shelf Arduino to program this, it will use 5V power and 5V VDD<sub>IO</sub> instead of the 3.3V on this board, however this has not proved to cause any issues during the flashing process in my past experiences.
+
+Anyways, after populating the board and flashing the Arduino Bootloader onto the ATMEGA, you are good to go and ready to upload whatever code you want. If you have any questions, feel free to email me with the address on the business card. Thank you for reading and enjoy!
