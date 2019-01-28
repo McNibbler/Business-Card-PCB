@@ -1,0 +1,20 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Thomas Kaunzinger Business Card.PrjPcb]
+   Generated File[Business Card.GTL]
+   Generated File[Business Card.GBL]
+   Generated File[Business Card.GTO]
+   Generated File[Business Card.GTS]
+   Generated File[Business Card.GBS]
+   Generated File[Business Card.GBO]
+   Generated File[Business Card.GKO]
+   Generated File[Business Card.Outline]
+   Generated File[Business Card.RUL]
+   Generated File[Business Card.EXTREP]
+   Generated File[Business Card.REP]
+
+
+Files Generated   : 11
+Documents Printed : 0
+
+Finished Output Generation At 11:27:07 PM On 1/24/2019
