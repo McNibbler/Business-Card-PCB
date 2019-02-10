@@ -14,6 +14,8 @@ This board requires intermediate practice in surface-mount soldering techniques 
 
 ### BOM
 
+You can purchase this BOM using the Digikey shopping cart link [here](https://www.digikey.com/short/p3zf2m "Add BOM to cart").
+
 - U1: [ATMEGA328P-AU (TQFP-32 package)](https://www.digikey.com/product-detail/en/microchip-technology/ATMEGA328P-AUR/ATMEGA328P-AURCT-ND/3789455 "Microprocessor")
 
 - U2: [FT232RL](https://www.digikey.com/product-detail/en/ftdi-future-technology-devices-international-ltd/FT232RL-REEL/768-1007-1-ND/1836402 "USB Controller")
@@ -38,7 +40,7 @@ This board requires intermediate practice in surface-mount soldering techniques 
 
 - R8: [0603 Resistor (0Ω)](https://www.digikey.com/product-detail/en/yageo/RC0603JR-070RL/311-0.0GRCT-ND/729622 "0 Ohm Jumper")
 
-- R9: [No-stuff (If you want to populate this with a 0Ω, please remove R8)]
+- R9: No-stuff (If you want to populate this with a 0Ω, please remove R8)
 
 - C1, C2: [0603 Capacitor (25V 22pF)](https://www.digikey.com/product-detail/en/avx-corporation/06035A220JAT2A/478-1167-1-ND/564199 "22 Puff Cap (For Crystal)")
 
