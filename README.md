@@ -30,19 +30,21 @@ This board requires intermediate practice in surface-mount soldering techniques 
 
 - F1: [500mA 15V 1812 Fuse](https://www.digikey.com/product-detail/en/bourns-inc/MF-MSMF050-2/MF-MSMF050-2CT-ND/662842 "MF-MSMF050-2 Fuse")
 
-- D1: [SS1P3L-M3/84A Schottky Diode](https://www.digikey.com/product-detail/en/vishay-semiconductor-diodes-division/SS1P3L-M3-84A/SS1P3L-M3-84AGICT-ND/1091672 "Schottky Diode")
-
 - 3.3V, RX, TX, D13: [1206 Green LEDs](https://www.digikey.com/product-detail/en/lite-on-inc/LTST-C150GKT/160-1169-1-ND/269241 "Indicator LEDs")
 
 - R1, R2, R3, R4, R6, R7: [0603 Resistor (280Ω)](https://www.digikey.com/product-detail/en/yageo/RC0603FR-07280RL/311-280HRCT-ND/730058 "Thank you Yageo for your affordable resistors")
 
 - R5: [0603 Resistor (1kΩ)](https://www.digikey.com/product-detail/en/yageo/RC0603FR-071KL/311-1.00KHRCT-ND/729790 "Thank you Yageo for your affordable resistors")
 
-- C1, C2: [0603 Capacitor (22pF)](https://www.digikey.com/product-detail/en/avx-corporation/06035A220JAT2A/478-1167-1-ND/564199 "22 Puff Cap (For Crystal)")
+- R8: [0603 Resistor (0Ω)](https://www.digikey.com/product-detail/en/yageo/RC0603JR-070RL/311-0.0GRCT-ND/729622 "0 Ohm Jumper")
 
-- C5, C6, C8: [0603 Capacitor (0.1μF)](https://www.digikey.com/product-detail/en/kemet/C0603C104Z3VACTU/399-1100-1-ND/411375 "0.1μF Bypass Caps")
+- R9: [No-stuff (If you want to populate this with a 0Ω, please remove R8)]
 
-- C3, C4, C7: [0603 Capacitor (1μF)](https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10A105KA8NNNC/1276-1102-1-ND/3889188 "1μF Bypass Caps")
+- C1, C2: [0603 Capacitor (25V 22pF)](https://www.digikey.com/product-detail/en/avx-corporation/06035A220JAT2A/478-1167-1-ND/564199 "22 Puff Cap (For Crystal)")
+
+- C3, C5, C6, C8: [0603 Capacitor (25V 0.1μF)](https://www.digikey.com/product-detail/en/kemet/C0603C104Z3VACTU/399-1100-1-ND/411375 "0.1μF Bypass Caps")
+
+- C4, C7, C9, C10: [0603 Capacitor (25V 1μF)](https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10A105KA8NNNC/1276-1102-1-ND/3889188 "1μF Bypass Caps")
 
 
 ### Arduino Setup
